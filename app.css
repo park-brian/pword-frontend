@@ -7,6 +7,13 @@
     animation: spin 2s linear infinite;
 }
 
+.paginationLink {
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border: 1px solid #dee2e6;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }

@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center">
+    <p>
+        Enter a phone number:
+        <input ng-model="ctrl.input" ng-change="ctrl.inputChanged()" ng-keyup="$event.keyCode == 13 ? ctrl.generatePhoneWords() : null" />
+    </p>
+</div>
+<button type="button" class="btn btn-light btn-lg btn-block" ng-class="!ctrl.canSubmit ? 'btn-light' : 'btn-success'" 
+ng-click="ctrl.generatePhoneWords()"  ng-disabled="!ctrl.canSubmit || ctrl.loading">
+    <h3>{{ctrl.parsedNumber}}</h3>
+    <p>{{ctrl.buttonMessage}}</p>
+</button>
+<hr>
